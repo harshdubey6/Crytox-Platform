@@ -16,15 +16,22 @@ h1{
 
 .showMenuNav{
   display: block;
+<<<<<<< HEAD
   position: fixed;
   width: 100%;
   height: 100vh;
+=======
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+>>>>>>> 7475bcd75ece947ac85eba8bb4077e3c417fae0b
   top: 0;
   left: 0;
   background: white;
   z-index: 10;
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
   animation: slideIn 0.3s ease-in-out;
@@ -37,6 +44,11 @@ h1{
   to {
     transform: translateX(0);
   }
+=======
+  justify-content: space-evenly;
+  align-items: center;
+
+>>>>>>> 7475bcd75ece947ac85eba8bb4077e3c417fae0b
 }
 
 @tailwind base;

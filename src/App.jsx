@@ -8,10 +8,13 @@ import Home from './pages/Home';
 import Exchanges from './pages/Exchanges'
 import Coins from './pages/Coins'
 import News from './pages/News'
+<<<<<<< HEAD
 import Favorites from './components/Favorites'
 import Login from './pages/Login'
 import ProtectedRoute from './components/ProtectedRoute'
 import { AuthProvider } from './context/AuthContext'
+=======
+>>>>>>> 7475bcd75ece947ac85eba8bb4077e3c417fae0b
 
 export const AppContext = createContext();
 
@@ -36,6 +39,7 @@ const App = () => {
     {
       path: "/news",
       element: <News />
+<<<<<<< HEAD
     },
     {
       path: "/favorites",
@@ -59,6 +63,16 @@ const App = () => {
         </div>
       </AppContext.Provider>
     </AuthProvider>
+=======
+    }
+  ]);
+  return (
+    <AppContext.Provider value={{currency, setCurrency, vsCurrency, setVsCurrency, showCapSide, setShowCapSide}}>
+      <div className='bg-[#181A20]'>
+        <RouterProvider router={router} />
+      </div>
+    </AppContext.Provider>
+>>>>>>> 7475bcd75ece947ac85eba8bb4077e3c417fae0b
   )
 }
 
